@@ -1,0 +1,22 @@
+body {
+    margin: 0 auto;
+    padding: 0;
+ }
+#header{
+    background-color: red;
+    padding: 0.5rem;
+    margin: 0;
+    text-align: center;
+    font-size: 2rem;
+}
+
+table{
+    margin: 5% auto;
+    width: 50%;
+    border: 3px solid green;
+    padding: 10px;
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
