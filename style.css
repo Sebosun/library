@@ -1,7 +1,7 @@
-body {
+body{
     margin: 0 auto;
     padding: 0;
- }
+}
 #header{
     background-color: red;
     padding: 0.5rem;
@@ -9,7 +9,6 @@ body {
     text-align: center;
     font-size: 2rem;
 }
-
 table{
     margin: 5% auto;
     width: 50%;
@@ -21,4 +20,23 @@ table, th, td {
     border: 1px solid black;
     border-collapse: collapse;
 }
+button{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 2rem;
+    border: none;
+    transition-duration: 0.5s;
+    display: block;
+    margin: 0 auto;
+    box-shadow: 2px 1.5px 1px black;
+}
 
+.button:hover{
+    background-color: azure;
+    color: white;
+}
+
+/* #add{
+    display: block;
+    margin: 0 auto;
+} */
