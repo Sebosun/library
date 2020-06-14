@@ -32,3 +32,10 @@ let Hobbit = new Book('The Hobbit','Tolkien', 100, false);
 
 addBookToLibrary(Hobbit);
 
+document.querySelector('.close').addEventListener('click', function(){
+  document.querySelector('.bg-modal').style.display = 'none';
+});
+
+document.querySelector('.open').addEventListener('click', function(){
+  document.querySelector('.bg-modal').style.display = 'flex';
+});
