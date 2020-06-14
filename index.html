@@ -21,10 +21,10 @@
             <div class="modal-contents">
 
                 <p>Add a book</p>
-                <form action="">
-                    <input type='text' class='input-fields' placeholder="Book" required>
-                    <input type='text' class='input-fields' placeholder='Author'required>
-                    <input type='number' class='input-fields' placeholder='Pages'required>
+                <form id='form' action="/" >
+                    <input type='text' class='input-fields' id='book' placeholder="Book" required>
+                    <input type='text' class='input-fields' id='author' placeholder='Author'required>
+                    <input type='number' class='input-fields' id='pages' placeholder='Pages'required>
                     <div class='radio-buttons'>
                         <label class='radio' for='read'>
                             <input type="radio" id='read' name='has-read' value='read'required>
@@ -35,9 +35,9 @@
                             Not read
                         </label>
                     </div>
-                    <button class="button" type="submit">Submit</button>
-                    <a href='#' class='button close'>Close</a>
+                    <button class="button" id='submit-button' type='submit'>Submit</button>
                 </form>
+                <a href='#' class='button close'>Close</a>
             </div>
         </div>
         <!-- <button id='add'>+</button> -->
