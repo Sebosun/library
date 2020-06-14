@@ -16,7 +16,31 @@
                 </tr>
             </table>
         </div>
-        <button id='add'>+</button>
+        <div class='button open'>+</div>
+        <div class="bg-modal">
+            <div class="modal-contents">
+
+                <p>Add a book</p>
+                <form action="">
+                    <input type='text' class='input-fields' placeholder="Book" required>
+                    <input type='text' class='input-fields' placeholder='Author'required>
+                    <input type='number' class='input-fields' placeholder='Pages'required>
+                    <div class='radio-buttons'>
+                        <label class='radio' for='read'>
+                            <input type="radio" id='read' name='has-read' value='read'required>
+                            Read
+                        </label>
+                        <label class='radio' for='not-read'>
+                            <input type="radio" id='not-read' name='has-read' value='not-read'required>
+                            Not read
+                        </label>
+                    </div>
+                    <button class="button" type="submit">Submit</button>
+                    <a href='#' class='button close'>Close</a>
+                </form>
+            </div>
+        </div>
+        <!-- <button id='add'>+</button> -->
     </body>
     <script src='./library.js'></script>
 </html>

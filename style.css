@@ -20,7 +20,7 @@ table, th, td {
     border: 1px solid black;
     border-collapse: collapse;
 }
-button{
+/* button{
     width: 5rem;
     height: 5rem;
     border-radius: 2rem;
@@ -29,14 +29,69 @@ button{
     display: block;
     margin: 0 auto;
     box-shadow: 2px 1.5px 1px black;
-}
-
-.button:hover{
-    background-color: azure;
-    color: white;
-}
-
-/* #add{
-    display: block;
-    margin: 0 auto;
 } */
+button{
+    width: 20rem;
+}
+.button {
+    margin-top: 2rem; 
+	background-color: rgba(62, 207, 243, 0.616);
+	border: 2px solid rgb(7, 7, 7);
+	border-radius: 30px;
+	text-decoration: none;
+	padding: 10px 28px;
+	color: black;	
+    display: block;
+    cursor: pointer;
+}
+
+.open{
+    width: 50px;
+    text-align: center;
+    margin: 0 auto;
+
+}
+
+.bg-modal {
+    width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.7);
+	position: absolute;
+    top: 0;
+    /* display: flex; */
+    /* will be changed to none later, then we will in js, change display to flex and to none depending on action */
+	display: none;
+	justify-content: center;
+	align-items: center;
+}
+
+.modal-contents{
+    background-color: rgb(255, 255, 255);
+    width: 20rem;
+    height: 500px;
+    padding: 15px;
+    position: relative;
+    border-radius:4px;
+    text-align: center;
+}
+
+input{
+    margin: 20px auto;
+    display: block;
+    border: 1px solid gray;
+}
+
+label{
+    display:block;
+}
+
+.radio-buttons{
+    display: flex;
+}
+.radio{
+    flex: 1 0 auto;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
