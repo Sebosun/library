@@ -22,16 +22,6 @@ table, th, td {
     border: 1px solid black;
     border-collapse: collapse;
 }
-/* button{
-    width: 5rem;
-    height: 5rem;
-    border-radius: 2rem;
-    border: none;
-    transition-duration: 0.5s;
-    display: block;
-    margin: 0 auto;
-    box-shadow: 2px 1.5px 1px black;
-} */
 
 button{
     width: 20rem;

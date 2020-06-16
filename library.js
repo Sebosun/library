@@ -16,9 +16,9 @@ function Book(name, author, pages, read) {
   this.name = name;
   this.author = author;
   this.pages = pages;
-  //read should be a boolean ? maybe
   this.read = read ? 'read' : 'not read';
 }
+
 // function which appends the book to the table)
 function render(book){
 
@@ -106,7 +106,7 @@ readButtons.forEach((button) =>{
 });
 
 
-
+//once the 'submit' button is pressed, adds the book to localStorage
 form.addEventListener('submit', (e) => {
   let newBook = new Book(bookInput.value, authorInput.value, pagesInput.value, document.querySelector('input[name="has-read"]:checked').value)
   let newBook_serialized = JSON.stringify(newBook);
