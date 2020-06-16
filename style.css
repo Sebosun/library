@@ -1,6 +1,8 @@
 body{
     margin: 0 auto;
     padding: 0;
+    background-color: rgba(5, 4, 4, 0.774);
+    color: white;
 }
 #header{
     background-color: red;
@@ -30,6 +32,7 @@ table, th, td {
     margin: 0 auto;
     box-shadow: 2px 1.5px 1px black;
 } */
+
 button{
     width: 20rem;
 }
@@ -62,17 +65,19 @@ button{
     /* will be changed to none later, then we will in js, change display to flex and to none depending on action */
 	display: none;
 	justify-content: center;
-	align-items: center;
+    align-items: center;
 }
 
 .modal-contents{
     background-color: rgb(255, 255, 255);
+    color: black;
     width: 20rem;
     height: 500px;
     padding: 15px;
     position: relative;
     border-radius:4px;
     text-align: center;
+    
 }
 
 input{
@@ -95,3 +100,6 @@ label{
     align-items: center;
 }
 
+#delete{
+    cursor: pointer;
+}
