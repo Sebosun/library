@@ -103,3 +103,8 @@ label{
 #delete{
     cursor: pointer;
 }
+
+#read{
+    color: green;
+    cursor: pointer;
+}
