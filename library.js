@@ -28,6 +28,13 @@ function render(book){
   for (let i = 0; i < bookArrayConversion.length; i++){
     let cell = document.createElement("td");
     var cellText = document.createTextNode(`${bookArrayConversion[i]}`);
+    //sets it so that later we are able to know which read button comes from which
+    //object
+    if (bookArrayConversion[i] === 'read' || bookArrayConversion[i] === 'not read'){
+      cell.className = book.name;
+      cell.setAttribute('id', 'read');
+    }
+    console.log(bookArrayConversion[i]);
     cell.appendChild(cellText);
     content.appendChild(cell);
   }
@@ -75,7 +82,30 @@ deleteButtons.forEach((button) => {
     localStorage.removeItem(button.className);
     location.reload();
   })
-})
+});
+
+
+//works similarly to delete button, finds read buttons with #read id
+// adds event listener to each, once pressed based on the class searched for the key
+// in the localStorage, parses it via JSON, changes the read property and replaces localstorage;
+const readButtons = document.querySelectorAll('#read');
+readButtons.forEach((button) =>{
+  button.addEventListener(('click'), (e) =>{
+    let tempBook = JSON.parse(localStorage[button.className]);
+    console.log(tempBook);
+    if (tempBook.read === 'read'){
+      tempBook.read = 'not read';
+    }
+    else{
+      tempBook.read = 'read';
+    }
+    console.log(tempBook);
+    localStorage.setItem(button.className, JSON.stringify(tempBook));
+    location.reload();
+  });
+});
+
+
 
 form.addEventListener('submit', (e) => {
   let newBook = new Book(bookInput.value, authorInput.value, pagesInput.value, document.querySelector('input[name="has-read"]:checked').value)
