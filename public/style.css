@@ -27,13 +27,13 @@ button{
     width: 20rem;
 }
 .button {
-    margin-top: 2rem; 
+    margin-top: 2rem;
 	background-color: rgba(62, 207, 243, 0.616);
 	border: 2px solid rgb(7, 7, 7);
 	border-radius: 30px;
 	text-decoration: none;
 	padding: 10px 28px;
-	color: black;	
+	color: black;
     display: block;
     cursor: pointer;
 }
@@ -67,7 +67,7 @@ button{
     position: relative;
     border-radius:4px;
     text-align: center;
-    
+
 }
 
 input{
@@ -95,6 +95,6 @@ label{
 }
 
 #read{
-    color: green;
+    color: green ;
     cursor: pointer;
 }

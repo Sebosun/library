@@ -1,5 +1,20 @@
 <!DOCTYPE html>
 <link rel="stylesheet" href="style.css">
+<head>
+  <meta charset=UTF-8>
+  <title>Library</title>
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="/__/firebase/8.2.9/firebase-app.js"></script>
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+  https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script src="/__/firebase/8.2.9/firebase-firestore.js"></script>
+  <script src="/__/firebase/8.2.9/firebase-auth.js"></script>
+  <script src="/__/firebase/8.2.9/firebase-analytics.js"></script>
+  k
+  <!-- Initialize Firebase -->
+  <script src="/__/firebase/init.js"></script>
+
+</head>
 <html>
     <title>The Library</title>
     <body>
@@ -20,7 +35,6 @@
         <div class='button open'>+</div>
         <div class="bg-modal">
             <div class="modal-contents">
-
                 <p>Add a book</p>
                 <form id='form' action="/" >
                     <input type='text' class='input-fields' id='book' placeholder="Book" required>
@@ -28,7 +42,7 @@
                     <input type='number' class='input-fields' id='pages' placeholder='Pages'required>
                     <div class='radio-buttons'>
                         <label class='radio' for='read'>
-                            <input type="radio" id='read' name='has-read' value='read'required>
+                            <input type="radio" id='did-read' name='has-read' value='read'required>
                             Read
                         </label>
                         <label class='radio' for='not-read'>
@@ -41,6 +55,6 @@
                 <a href='#' class='button close'>Close</a>
             </div>
         </div>
+        <script src='./library.js' defer></script>
     </body>
-    <script src='./library.js'></script>
 </html>
